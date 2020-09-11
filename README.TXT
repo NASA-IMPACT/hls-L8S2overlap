@@ -1,3 +1,8 @@
+Junchang Ju 
+
+Sep 11, 2020: Update to output for the HLS land tiles only.
+
+1. 
 The program L8S2overlap finds all the Landsat path/rows overlapping each MGRS
 tile.  The Landsat WRS rows 1-140 and 230-248 are considered. Rows after 122 
 are nominally considered "nightime" rows, but over the long summer days some 
@@ -22,6 +27,12 @@ PathRow S2TileID S2ULX  S2ULY PercentOfS2
 001001 29XNL 499980 9100020 5.0
 001001 30XVQ 399960 9000000 4.1 
 
+2. 
+In particular, the subset of the global overlap lookup table for the 18501 HLS land tiles 
+is saved in HLS.L8S2overlap.txt.
+
+Note: Tile 24XWU is not in the global overlap table, most likely because
+Landsat doesn't go that high
 
 
 Notes:
