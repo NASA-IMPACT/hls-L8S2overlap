@@ -29,10 +29,12 @@ PathRow S2TileID S2ULX  S2ULY PercentOfS2
 
 2. 
 In particular, the subset of the global overlap lookup table for the 18501 HLS land tiles 
-is saved in HLS.L8S2overlap.txt.
+is extracted and saved in HLS.L8S2overlap.txt.  
+
+The extract script is extract_HLS_overlap.sh 
 
 Note: Tile 24XWU is not in the global overlap table, most likely because
-Landsat doesn't go that high
+Landsat doesn't go that high.
 
 
 Notes:
