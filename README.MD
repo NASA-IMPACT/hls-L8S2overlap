@@ -21,6 +21,6 @@ Example:
 > 001002 29XMK 399960 9000000 13.5\
 > 001003 27XWH 499980 8800020 3.9\
 > 001003 27XWJ 499980 8900040 4.1\
-> 001003 28XDN 399960 8800020 15.8\
+> 001003 28XDN 399960 8800020 15.8
 
 3) Included in the repo is a script to convert the KML files to GeoJson files for viewing in geojson.io. This is in the utils folder in the convertKMLtoGJ.py file. This file leverages the s2_l8pr_params.json file in the parent directory and requires an input argument variable (s2 or l8pr) to determine which geojson to convert. 
