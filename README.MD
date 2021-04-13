@@ -12,8 +12,9 @@ This repo maps S2 tile ids to Landsat WRS Path/Rows for HLS L30 data production.
       default: "https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/WRS-2_bound_world_0.kml"
    4) s2_l8_outfile: The output file for the Landsat Path/Row and Sentinel-2 tile intersection information
 
-2. The expected format of the s2_l8_outfile should be a space-delimited file with a header row, followed by the intersection data
-   example:
+2. The expected format of the s2_l8_outfile should be a space-delimited file with a header row, followed by the intersection data. 
+
+Example:
 
 > PathRow S2TileID S2ULX S2ULY PercentOfS2
 > 001002 28XEQ 499980 9000000 9.2
@@ -22,6 +23,4 @@ This repo maps S2 tile ids to Landsat WRS Path/Rows for HLS L30 data production.
 > 001003 27XWJ 499980 8900040 4.1
 > 001003 28XDN 399960 8800020 15.8
 
-3) Included in the repo is a script to convert the KML files to GeoJson files for viewing in geojson.io. This is in the utils
-folder in the convertKMLtoGJ.py file. This file leverages the s2_l8pr_params.json file in the parent directory and requires
-an input argument variable (s2 or l8pr) to determine which geojson to convert. 
+3) Included in the repo is a script to convert the KML files to GeoJson files for viewing in geojson.io. This is in the utils folder in the convertKMLtoGJ.py file. This file leverages the s2_l8pr_params.json file in the parent directory and requires an input argument variable (s2 or l8pr) to determine which geojson to convert. 
