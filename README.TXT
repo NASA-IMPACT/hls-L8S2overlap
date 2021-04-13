@@ -15,12 +15,12 @@ This repo maps S2 tile ids to Landsat WRS Path/Rows for HLS L30 data production.
 2. The expected format of the s2_l8_outfile should be a space-delimited file with a header row, followed by the intersection data
    example:
 
-```PathRow S2TileID S2ULX S2ULY PercentOfS2
-001002 28XEQ 499980 9000000 9.2
-001002 29XMK 399960 9000000 13.5
-001003 27XWH 499980 8800020 3.9
-001003 27XWJ 499980 8900040 4.1
-001003 28XDN 399960 8800020 15.8```
+>PathRow S2TileID S2ULX S2ULY PercentOfS2
+>001002 28XEQ 499980 9000000 9.2
+>001002 29XMK 399960 9000000 13.5
+>001003 27XWH 499980 8800020 3.9
+>001003 27XWJ 499980 8900040 4.1
+>001003 28XDN 399960 8800020 15.8
 
 3) Included in the repo is a script to convert the KML files to GeoJson files for viewing in geojson.io. This is in the utils
 folder in the convertKMLtoGJ.py file. This file leverages the s2_l8pr_params.json file in the parent directory and requires
