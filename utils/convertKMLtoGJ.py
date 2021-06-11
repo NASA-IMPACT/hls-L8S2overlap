@@ -47,7 +47,7 @@ class KMLtoGeoJson:
             for coord in boundary:
                 ll = [float(x) for x in coord.split(",")]
                 coordinates.append([ll[0], ll[1], ll[2]])
-            feature["geometry"]["coordinates"].append(coordinates)
+            feature["geometry"]["coordinates"].append([coordinates])
             self.grid["features"].append(feature)
 
     def get_S2grid_from_kml(self):
@@ -74,7 +74,7 @@ class KMLtoGeoJson:
                     coordinates = []
                     for coord in boundary:
                         ll = [float(x) for x in coord.split(",")]
-                        coordinates.append([ll[0], ll[1], ll[2]])
+                        coordinates.append([ll[0], ll[1]])
                     feature["geometry"]["coordinates"].append([coordinates])
                 self.grid["features"].append(feature)
 
