@@ -1,0 +1,6 @@
+{
+    "s2_tile_url": "https://raw.githubusercontent.com/NASA-IMPACT/hls-land_tiles/brian/HLS.land.tiles.txt",
+    "kml_s2_url": "https://sentinel.esa.int/documents/247904/1955685/S2A_OPER_GIP_TILPAR_MPC__20151209T095117_V20150622T000000_21000101T000000_B00.kml/ec05e22c-a2bc-4a13-9e84-02d5257b09a8",
+    "kml_l8pr_url": "https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/WRS-2_bound_world_0.kml",
+    "s2_l8_outfile": "HLS.L8S2overlap_test.txt"
+}
