@@ -8,9 +8,13 @@ This repo maps S2 tile ids to Landsat WRS Path/Rows for HLS L30 data production.
       default: "https://raw.githubusercontent.com/NASA-IMPACT/hls-land_tiles/master/HLS.land.tiles.txt"
    2) kml_s2_url: The URL to the Sentinel-2 grid KML file provided by ESA
       default: "https://sentinel.esa.int/documents/247904/1955685/S2A_OPER_GIP_TILPAR_MPC__20151209T095117_V20150622T000000_21000101T000000_B00.kml/ec05e22c-a2bc-4a13-9e84-02d5257b09a8"
-   3) kml_l8pr_url: The URL to the Path/Row KML file provided by USGS
-      default: "https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/WRS-2_bound_world_0.kml"
-   4) s2_l8_outfile: The output file for the Landsat Path/Row and Sentinel-2 tile intersection information
+
+   The ascending and descending path/row shapefiles are required for the intersection code. These shapefiles for the WRS-2 grid can be found here (made available by USGS): "https://www.usgs.gov/core-science-systems/nli/landsat/landsat-shapefiles-and-kml-files"
+   3) ascending_shapefile: The local file path to the ascending Path/Row shapefile provided by USGS
+      Note: Only ascending path/rows intersecting 65N and north are included in the intersection code. These path/rows 65N and above can have valid daytime scenes during northern hemisphere summer. The remaining path/rows are nighttime scenes that are not useful for HLS applications.
+   4) descending_shapefile: The local file_path to the descending Path/Row shapefile provided by USGS
+      Note: All path/rows in the descending shapefile are included in the intersection code.
+   5) s2_l8_outfile: The output file for the Landsat Path/Row and Sentinel-2 tile intersection information
 
 2. The expected format of the s2_l8_outfile should be a space-delimited file with a header row, followed by the intersection data. 
 
