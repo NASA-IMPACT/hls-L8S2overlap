@@ -1,4 +1,4 @@
-Apr 13, 2021
+Aug 06, 2021
 Junchang Ju & Brian Freitag
 
 This repo maps S2 tile ids to Landsat WRS Path/Rows for HLS L30 data production.
@@ -10,6 +10,7 @@ This repo maps S2 tile ids to Landsat WRS Path/Rows for HLS L30 data production.
       default: "https://sentinel.esa.int/documents/247904/1955685/S2A_OPER_GIP_TILPAR_MPC__20151209T095117_V20150622T000000_21000101T000000_B00.kml/ec05e22c-a2bc-4a13-9e84-02d5257b09a8"
 
    The ascending and descending path/row shapefiles are required for the intersection code. These shapefiles for the WRS-2 grid can be found here (made available by USGS): "https://www.usgs.gov/core-science-systems/nli/landsat/landsat-shapefiles-and-kml-files"
+   
    3) ascending_shapefile: The local file path to the ascending Path/Row shapefile provided by USGS
       Note: Only ascending path/rows intersecting 65N and north are included in the intersection code. These path/rows 65N and above can have valid daytime scenes during northern hemisphere summer. The remaining path/rows are nighttime scenes that are not useful for HLS applications.
    4) descending_shapefile: The local file_path to the descending Path/Row shapefile provided by USGS
